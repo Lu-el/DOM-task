@@ -7,6 +7,7 @@ const itemThree = document.querySelector('.item_three');
 const itemFour = document.querySelector('.item_four');
 const itemFive = document.querySelector('.item_five');
 const itemSix = document.querySelector('.item_six');
+const ads = document.querySelector('.ads');
 
 const listTwo = itemTwo.querySelector('.props__list');
 const listThree = itemThree.querySelector('.props__list');
@@ -27,7 +28,7 @@ const itemsSix = itemSix.querySelectorAll('.props__item');
 
 items.prepend(itemOne, itemTwo, itemThree, itemFour, itemFive, itemSix);
 
-itemsFour[3].append(itemsTwo[3]);
+itemsFour[2].after(itemsTwo[3]);
 listTwo.before(h2Five);
 listSix.before(h2Two);
 listFive.before(h2Six);
@@ -37,3 +38,5 @@ h2Three.innerHTML = 'This и прототипы объектов';
 
 contentThree.append(listFive);
 contentFive.append(listThree);
+
+ads.remove();
